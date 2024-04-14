@@ -2,10 +2,18 @@
 
 ![screenshot](screenshot.png)
 
+
+
+----
+
+
 ### Current audio utilities included in WebUI
 - [Demucs](https://github.com/facebookresearch/demucs)
 - [OpenAI Whisper](https://github.com/openai/whisper)
 - [Audio Slicer](https://github.com/openvpi/audio-slicer)
+
+----
+
 
 ## Features
 
@@ -15,6 +23,8 @@
 - Run locally on your own hardware.
 - Supports various audio types including MP3, WAV, and FLAC.
 - Provides a simple and intuitive web UI for easy use.
+
+---
 
 ### Pending maybe future utilities
 - Other denoise deecho dereverb utilities
@@ -42,9 +52,15 @@ setx /m PATH "C:\ffmpeg\bin;%PATH%"
 brew install ffmpeg
 ```
 
+---
+
+
 ## Python Environment Setup and WebUI Installation
 
 Before running the program, ensure you have the necessary Python packages installed. Using a virtual environment. Example below uses Conda.
+
+---
+
 
 ### Linux, Windows or MacOS
 ```terminal
@@ -66,6 +82,8 @@ git clone https://github.com/bradsec/audio-utils-webui.git
 cd audio-utils-webui
 ```
 
+---
+
 ## Usage
 
 To start the program, run the following command in the project directory:
@@ -74,19 +92,33 @@ To start the program, run the following command in the project directory:
 python webui.py
 ```
 
+---
+
 This will launch the Gradio WebUI on `http://0.0.0.0:7860`. Open this URL in a web browser to access the user interface. If launching on the same PC you can use `http://localhost:7860`, otherwise `0.0.0.0` allows it to accessed from any computer on the local network using the assigned IP address of machine hosting the webui ie. `http://192.168.0.1:7860`.
 
+---
+
+
 **Note:** On first use of demucs and whisper will download the required checkpoints and models. Check the terminal output for status of the download and processing etc.
+
+---
 
 ## Testing
 - September 2023 - Tested above install and webui usage on Debian 12 (Bookworm) and Microsoft Windows 11.
 
+---
+
 ## Limitations
 - May be issues with very long audio files.
+
+---
 
 ## Troubleshooting
 
 Check terminal output for information. All commands and progress will be shown in terminal. As mentioned, models need to download on first use, the number of files and their size may vary. Other messages such as out of memory (GPU) will also be shown in the terminal.
+
+
+---
 
 ## Licence Information / Credit
 - MIT Licence - [audio-utils-webui github.com/bradsec/audio-utils-webui](https://github.com/bradsec/audio-utils-webui)
@@ -95,3 +127,4 @@ Check terminal output for information. All commands and progress will be shown i
 - MIT Licence - [Audio Slicer - github.com/openvpi/audio-slicer](https://github.com/openvpi/audio-slicer)
 - MIT Licence - [OpenAI Whisper - github.com/openai/whisper](https://github.com/openai/whisper)  
 - [Mixed Licence](https://github.com/FFmpeg/FFmpeg/blob/master/LICENSE.md) - [github.com/FFmpeg/FFmpeg](https://github.com/FFmpeg/FFmpeg)
+- MIT Licence - [audio-utils-webui](https://github.com/bradsec/audio-utils-webui)
