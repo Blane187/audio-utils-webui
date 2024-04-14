@@ -301,7 +301,7 @@ def main():
     """
 
 
-    with gr.Blocks(title=title) as audio_webui:
+    with gr.Blocks(theme='ParityError/Interstellar',  title=title) as app:
         
         gr.Markdown(description)
 
@@ -412,7 +412,7 @@ def main():
         gr.Markdown(repo_link)
         
     # Launch the Gradio web server
-    audio_webui.launch(server_name="0.0.0.0", server_port=7860)
+    app.launch(share=True, server_name="0.0.0.0", server_port=7860)
 
 
 if __name__ == "__main__":
